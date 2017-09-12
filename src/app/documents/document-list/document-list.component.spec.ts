@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DocumentListComponent } from './index';
+import { DocumentListComponent, DocumentItemComponent } from '../index';
+import { CatComponent } from '../../cat';
 
 describe('DocumentListComponent', () => {
   let component: DocumentListComponent;
@@ -8,18 +9,26 @@ describe('DocumentListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DocumentListComponent ]
+      declarations: [
+        DocumentListComponent,
+        DocumentItemComponent,
+        CatComponent
+      ]
     })
-    .compileComponents();
+    .compileComponents()
+    .then(() => {
+      fixture = TestBed.createComponent(DocumentListComponent);
+      component = fixture.componentInstance;
+      fixture.detectChanges();
+    });
   }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(DocumentListComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render a cat', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('cat')).toBeDefined();
   });
 });
