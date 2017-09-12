@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DocumentListComponent } from './document-list.component';
+import { DocumentListComponent } from './index';
 
 describe('DocumentListComponent', () => {
   let component: DocumentListComponent;
