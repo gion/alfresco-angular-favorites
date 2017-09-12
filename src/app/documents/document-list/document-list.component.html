@@ -1,7 +1,8 @@
 <p *ngIf="documents.length === 0">Please look at the follwing cat <cat></cat> while we fetch your documents!</p>
 
-<ul>
-  <li *ngFor="let document of documents">
-    <document-item [name]=document></document-item>
-  </li>
-</ul>
+<div class="wrapper">
+  <document-item
+    *ngFor="let document of documents"
+    [name]=document>
+  </document-item>
+</div>
