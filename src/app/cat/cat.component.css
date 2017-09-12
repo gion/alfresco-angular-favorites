@@ -1,0 +1,15 @@
+img {
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: smooth-bounce 3s ease-in-out infinite;
+}
+
+@keyframes smooth-bounce {
+  0%, 100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
