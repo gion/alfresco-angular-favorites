@@ -1,0 +1,5 @@
+<p *ngIf="documents.length === 0">Please look at the follwing cat <cat></cat> while we fetch your documents!</p>
+
+<ul>
+  <li *ngFor="let document of documents">{{document}}</li>
+</ul>
