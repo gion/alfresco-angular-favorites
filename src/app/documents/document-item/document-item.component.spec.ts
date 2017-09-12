@@ -30,9 +30,9 @@ describe('DocumentItemComponent', () => {
     expect(testComponent).toBeTruthy();
   });
 
-  // it('should display the document name from input', () => {
-  //   expect(compiled.innerText).toBe('document sample name');
-  // });
+  it('should display the document name from input', () => {
+    expect(compiled.innerText).toBe('document sample name');
+  });
 });
 
 @Component({
