@@ -20,7 +20,6 @@ export class DocumentListComponent implements OnInit {
         'document 4',
         'document 5',
       ]
-    }, 5000)
+    }, 3000)
   }
-
 }
