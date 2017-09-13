@@ -20,7 +20,6 @@ export class DocumentItemComponent implements OnInit {
     }
   }
 
-
   get name(): string {
     return this._name
   }

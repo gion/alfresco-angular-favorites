@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DocumentsService } from '../documents-service.service'
+
 @Component({
   selector: 'document-list',
   templateUrl: './document-list.component.html',
@@ -9,18 +11,11 @@ export class DocumentListComponent implements OnInit {
 
   documents = []
 
-  constructor() { }
+  constructor(private documentsService: DocumentsService) { }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.documents = [
-        'document-1.ts',
-        'folder',
-        'file.xls',
-        'sample.txt',
-        'other folder',
-        'README.md'
-      ]
-    }, 3000)
+    this.documentsService
+      .getAll()
+      .subscribe(docs => this.documents = docs)
   }
 }
