@@ -3,7 +3,8 @@
 This is a sample project that aims to consuma a public Alfresco API and show the resulting items in a list of cards (material design), all of this packed as an angular app.
 You can checkout the end result on [the project's github pages page](http://gion.github.io/alfresco-angular-favorites) and watch the project evolution [here](https://github.com/gion/alfresco-angular-favorites/projects/1) (kanban board).
 
->NOTE: This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
+>NOTE #1: This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.  
+>NOTE #2: The project isn't hooked up to an Alfresco API yet, it uses a dummy api
 
 ## Development server
 
