@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import {
   MdCardModule,
@@ -10,7 +11,10 @@ import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { CatComponent } from './cat';
-import { DocumentListComponent, DocumentItemComponent } from './documents';
+import {
+  DocumentListComponent,
+  DocumentItemComponent,
+  DocumentsService } from './documents';
 
 @NgModule({
   declarations: [
@@ -21,13 +25,14 @@ import { DocumentListComponent, DocumentItemComponent } from './documents';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     MdCardModule,
     MdIconModule,
     MdButtonModule,
     MdRippleModule
   ],
   exports: [],
-  providers: [],
+  providers: [DocumentsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
