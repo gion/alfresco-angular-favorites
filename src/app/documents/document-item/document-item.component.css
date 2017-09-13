@@ -1,3 +1,11 @@
 md-card {
   margin: 10px auto;
 }
+
+md-card-actions {
+  text-align: right;
+}
+
+md-icon {
+  vertical-align: bottom;
+}

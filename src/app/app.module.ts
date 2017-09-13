@@ -6,6 +6,7 @@ import {
   MdIconModule,
   MdButtonModule,
   MdRippleModule } from '@angular/material';
+import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { CatComponent } from './cat';
@@ -25,6 +26,7 @@ import { DocumentListComponent, DocumentItemComponent } from './documents';
     MdButtonModule,
     MdRippleModule
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -14,11 +14,12 @@ export class DocumentListComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.documents = [
-        'document 1',
-        'document 2',
-        'document 3',
-        'document 4',
-        'document 5',
+        'document-1.ts',
+        'folder',
+        'file.xls',
+        'sample.txt',
+        'other folder',
+        'README.md'
       ]
     }, 3000)
   }

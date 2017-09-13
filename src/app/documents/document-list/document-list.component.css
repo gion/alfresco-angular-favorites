@@ -4,17 +4,23 @@
   grid-gap: 2%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .wrapper {
     grid-template-columns: 47% 47%;
     grid-gap: 3%;
   }
 }
 
-
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .wrapper {
     grid-template-columns: 32% 32% 32%;
     grid-gap: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 1%;
   }
 }

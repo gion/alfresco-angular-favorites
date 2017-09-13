@@ -7,7 +7,29 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class DocumentItemComponent implements OnInit {
-  @Input() name: string
+  public type: string
+  private _name: string
+
+  private _updateType(name: string) {
+    let extension = name.split('.')[1]
+
+    if (extension) {
+      this.type = 'file'
+    } else {
+      this.type = 'directory'
+    }
+  }
+
+
+  get name(): string {
+    return this._name
+  }
+
+  @Input()
+  set name(name: string) {
+    this._name = name
+    this._updateType(name)
+  }
 
   constructor() { }
 
