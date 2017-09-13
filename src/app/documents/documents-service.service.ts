@@ -9,7 +9,7 @@ import { DocumentModel } from './index';
 @Injectable()
 export class DocumentsService {
 
-  private baseUrl: string = 'http://jsonplaceholder.typicode.com';
+  private baseUrl: string = '//jsonplaceholder.typicode.com';
 
   constructor(private http: Http) {}
 
