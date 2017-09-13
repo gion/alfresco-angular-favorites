@@ -1,20 +1,16 @@
-<!-- <p>
-  document {{name}}
-</p> -->
-
 <md-card>
   <md-card-header>
-    <md-icon>attachment</md-icon>>
-    <md-card-title>{{name}}</md-card-title>
+    <md-card-title>
+      <md-icon>{{type == 'file' ? 'insert_drive_file' : 'folder'}}</md-icon>
+      <span>{{name}}</span>
+    </md-card-title>
   </md-card-header>
-  <!-- <img md-card-image src="http://lorempixel.com/200/100/cats/" alt="Photo of a random cat"> -->
-  <md-card-content>
+  <!-- <md-card-content>
     <p>
-      some description of the doc...
+      some sort of preview of the doc...
     </p>
-  </md-card-content>
+  </md-card-content> -->
   <md-card-actions>
     <button md-button>OPEN</button>
-    <button md-button>SHARE</button>
   </md-card-actions>
 </md-card>

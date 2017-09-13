@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MaterialModule } from '@angular/material';
+
 import { DocumentListComponent, DocumentItemComponent } from '../index';
 import { CatComponent } from '../../cat';
 
@@ -9,6 +11,7 @@ describe('DocumentListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [MaterialModule],
       declarations: [
         DocumentListComponent,
         DocumentItemComponent,
