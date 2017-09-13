@@ -427,7 +427,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var DocumentsService = (function () {
     function DocumentsService(http) {
         this.http = http;
-        this.baseUrl = 'http://jsonplaceholder.typicode.com';
+        this.baseUrl = '//jsonplaceholder.typicode.com';
     }
     DocumentsService.prototype.getAll = function () {
         var _this = this;
